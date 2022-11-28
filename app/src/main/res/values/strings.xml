@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Assignment_1</string>
+    <string name="FAMCH">FAMCH</string>
+    <string name="downText">Learn .share. progress</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="mainHeading">What Kind of Plants You Want</string>
+    <string name="search">Search</string>
+    <string name="all">All</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="hanging">Hanging</string>
+    <string name="indoor">Indoor</string>
+    <string name="details">Details</string>
+    <string name="productDescription">This is the main image of the product</string>
+    <string name="cards">Cards</string>
+    <string name="cardNumber1">6220***5768</string>
+    <string name="exp_date">EXP Date</string>
+    <string name="_12_23">12/23</string>
+    <string name="cardNumber2">6501***5482</string>
+    <string name="cardNumber3">1535***5952</string>
+    <string name="add_card">+ Add Card</string>
+    <string name="add_Card_symbol">+</string>
+    <string name="loans">Loans</string>
+    <string name="student_loan">Student Loan</string>
+    <string name="loanPrice">12,126$</string>
+    <string name="paymentDate">Payment date 29/7</string>
+    <string name="amount">Amount 260S</string>
+    <string name="request_loan">Request Loan</string>
+</resources>

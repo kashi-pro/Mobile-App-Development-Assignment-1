@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/hangPlantImage"
+        android:layout_width="179dp"
+        android:layout_height="302dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:src="@drawable/hang_plant" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/half_green_background"
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:background="@drawable/text_view_green_back"
+            android:backgroundTint="#059033" />
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="356dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/plant_sigup_field_back"
+            android:drawableStart="@drawable/user_icon"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:textColorHint="#C6C6C6" />
+
+        <EditText
+            android:id="@+id/passField"
+            android:layout_width="356dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/usernameField"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPassword"
+            android:background="@drawable/plant_sigup_field_back"
+            android:drawableStart="@drawable/pass_icon"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:textColorHint="#C6C6C6" />
+
+        <Button
+            android:id="@+id/forgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passField"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="Forgot Password?"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotPass"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_round"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/userText"
+            android:layout_width="112dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/signInBtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="-24dp"
+            android:layout_marginRight="-24dp"
+            android:layout_toStartOf="@+id/singUpBtn"
+            android:layout_toLeftOf="@+id/singUpBtn"
+            android:text="New User?"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/singUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signInBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
+            android:background="@android:color/transparent"
+            android:text="Signup"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

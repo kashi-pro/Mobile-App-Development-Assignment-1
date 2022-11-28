@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/cardHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cards"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardHeading"
+        app:layout_constraintEnd_toStartOf="@id/card2"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:background="#FFF4CD">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cardNumber1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <TextView
+                android:id="@+id/expiryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/exp_date"
+                android:textSize="12sp"
+                android:textColor="#717171"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expiryText"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/_12_23"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/card1"
+        app:layout_constraintTop_toBottomOf="@+id/cardHeading">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="92dp"
+            android:background="#BBEAFF">
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cardNumber2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <TextView
+                android:id="@+id/expiryText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/exp_date"
+                android:textColor="#717171"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expiryText2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/_12_23"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/card4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:background="#FDD3D3">
+
+            <TextView
+                android:id="@+id/number3"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cardNumber3"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <TextView
+                android:id="@+id/expiryText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/exp_date"
+                android:textColor="#717171"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/date3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expiryText3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/_12_23"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="127dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/card1"
+        app:layout_constraintTop_toBottomOf="@+id/card2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/add_card_background"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/addCardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="@string/add_card"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/loansHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/loans"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loansHeading">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8F8FF"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/loadingIcon"
+                android:layout_width="114dp"
+                android:layout_height="110dp"
+                android:background="@drawable/loading_icon" />
+
+            <TextView
+                android:id="@+id/stdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/loadingIcon"
+                android:layout_toRightOf="@+id/loadingIcon"
+                android:text="@string/student_loan"
+                android:textColor="#C6C6C6"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/loanPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stdText"
+                android:layout_marginStart="46dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/loadingIcon"
+                android:layout_toRightOf="@+id/loadingIcon"
+                android:text="@string/loanPrice"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/paymentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loanPrice"
+                android:layout_marginStart="46dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginTop="13dp"
+                android:layout_toEndOf="@+id/loadingIcon"
+                android:layout_toRightOf="@+id/loadingIcon"
+                android:text="@string/paymentDate"
+                android:textColor="#C6C6C6"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentDate"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@+id/loadingIcon"
+                android:layout_toRightOf="@+id/loadingIcon"
+                android:text="@string/amount"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/reqBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/add_card_background"
+        android:padding="10dp"
+        android:text="@string/request_loan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

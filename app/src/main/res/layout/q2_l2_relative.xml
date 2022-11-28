@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/menuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/menu_bars" />
+
+    <TextView
+        android:id="@+id/cartIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/cart" />
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="193dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/menuIcon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/mainHeading"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="355dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/mainHeading"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:autofillHints="Search"
+        android:background="#E8E8E8"
+        android:drawableStart="@drawable/search_icon"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawableEnd="@drawable/mic_icon"
+        android:drawableRight="@drawable/mic_icon"
+        android:drawablePadding="10dp"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#6C6C6C" />
+
+    <TextView
+        android:id="@+id/allText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchField"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/all"
+        android:textColor="#6C6C6C"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchField"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/allText"
+        android:layout_toRightOf="@+id/allText"
+        android:text="@string/small"
+        android:textColor="#059033"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchField"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/smallText"
+        android:layout_toRightOf="@+id/smallText"
+        android:text="@string/medium"
+        android:textColor="#6C6C6C"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/hangingText"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchField"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/mediumText"
+        android:layout_toRightOf="@+id/mediumText"
+        android:text="@string/hanging"
+        android:textColor="#6C6C6C"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="150dp"
+        android:layout_height="228dp"
+        android:layout_below="@id/allText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:backgroundTint="#059033"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/plantCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/indoor"
+                android:textColor="#DFDFDF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/hearIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginLeft="86dp"
+                android:layout_toEndOf="@+id/plantCategory"
+                android:layout_toRightOf="@+id/plantCategory"
+                android:background="@drawable/heart_icon"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="93dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/plantCategory"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="39dp"
+                android:contentDescription="This is an image of a plant"
+                android:src="@drawable/big_plant" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="Ficas"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="From $12"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/addIcon"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/add_icon" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="150dp"
+        android:layout_height="228dp"
+        android:layout_below="@id/allText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:backgroundTint="#059033"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/plantCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/indoor"
+                android:textColor="#DFDFDF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/hearIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/heart_icon"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="93dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/plantCategory"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:contentDescription="This is an image of a plant"
+                android:src="@drawable/big_cactus" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="Cactus"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="From $12"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/addIcon"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/add_icon" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="150dp"
+        android:layout_height="228dp"
+        android:layout_below="@id/card1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:backgroundTint="#059033"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/plantCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/indoor"
+                android:textColor="#DFDFDF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/hearIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginLeft="86dp"
+                android:layout_toEndOf="@+id/plantCategory"
+                android:layout_toRightOf="@+id/plantCategory"
+                android:background="@drawable/heart_icon"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="93dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/plantCategory"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="39dp"
+                android:contentDescription="This is an image of a plant"
+                android:src="@drawable/small_cactus" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="Smanantha"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="From $12"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/addIcon"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/add_icon" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="150dp"
+        android:layout_height="228dp"
+        android:layout_below="@id/card2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:backgroundTint="#059033"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/plantCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/indoor"
+                android:textColor="#DFDFDF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/hearIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/heart_icon"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="93dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/plantCategory"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:contentDescription="This is an image of a plant"
+                android:src="@drawable/leafy_plant" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:text="Alovera"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="From $12"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/addIcon"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/add_icon" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
